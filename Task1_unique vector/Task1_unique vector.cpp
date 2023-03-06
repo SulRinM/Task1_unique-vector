@@ -10,9 +10,8 @@
 #include <vector>
 #include <algorithm>
 
-int main()
+void remove_duplic(std::vector<int> &v)
 {
-    std::vector<int> v = { 1, 1, 2, 5, 6, 1, 2, 4 };
     std::cout << "[IN]: ";
     for (const auto& i : v)
     {
@@ -27,6 +26,14 @@ int main()
     {
         std::cout << a << " ";
     }
+}
+
+int main()
+{
+    std::vector<int> ve = { 1, 1, 2, 5, 6, 1, 2, 4 };
+
+    remove_duplic(ve);
+
 
     return 0;
 }
